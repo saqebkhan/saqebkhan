@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
    
     <title>Form</title>
+    <script>
+        function setFullName() {
+            var fName= document.getElementById("firstname");
+            var mName= document.getElementById("middlename");
+            var lName= document.getElementById("lastname");
+            var FullName= document.getElementById("fullname");
+
+            FullName.value= fName.value +" "+ mName.value +" "+lName.value
+            
+        
+            }
+            function clearme() {
+                var clrfullname=document.getElementById("fullname");
+                clrfullname.value=" ";
+
+                
+            }
+        </script>
 </head>
 <body>
     <h1>Emploee Details<h1>
@@ -12,16 +30,24 @@
 
         <h3>Personal Info</h3>
 
-        <label>First Name:</label>
-        <input type="text"> <br>
-    
-        <label>Last Name:</label>
-        <input type="text">
+        <label>First Name:
+        <input type="text" id="firstname">
+        </label>
+         <br> <br>
 
-        <button>Full Name</button>
-        <br>
-        <br>
-        <label>Full Name:</label>
-    <input type="text">
+         <label>Middle Name:
+             <input type="text" id="middlename">
+         </label>
+         <br> <br>
+    
+        <label>Last Name:
+        <input type="text" id="lastname">
+        </label> <br> <br>
+        <label>Full Name:<input type="text" id="fullname">
+        </label> <br> <br>
+        <button onclick="setFullName()">Full Name</button>
+
+        <button onclick="clearme()">clear</button>
+    <br>
 </body>
 </html>
