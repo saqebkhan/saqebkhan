@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>form</title>
+    <script>
+        function setFullName() {
+            var fName= document.getElimentById("firstname");
+            var mName= document.getElimentById("middlename");
+            var lName= document.getElimentById("lastname");
+            var FullName= document.getElimentById("fullname");
+
+            FullName.value= fName.value +" "+ mName.value +" "+lName.value
+
+
+            } 
+         
+        </script>
+            
+
+
+    </head>
+    <body>
+        <h1>Emoloyee Detail</h1>
+        <hr><br>
+        <label>First Name:</label>
+        <input type="text" id="firstName"> <br><br>
+        <label>Middle Name:</label>
+        <input type="text" id="middlename"> <br><br>
+        <label>Last Name:</label> 
+        <input type="text" id="lastname"><br><br>
+        <label>Full Name:</label>
+        <input type="text">
+<button onclick="setFullName()">Submit</button>
+<button>clear</button>
+
+    </body>
+</html>

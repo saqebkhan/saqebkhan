@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Tic Tac</title>
+    <script>
+        var player=1;
+        function ticHere(id){
+            var objTic= document.getElementById(id)
+            var objPlayer= document.getElementById("player");
+            if(player==1){
+            objTic.style="color:brown;font-size: 30px;";
+            objPlayer.style="color:green;font-size: 30px";
+            objTic.innerHTML="ME";
+            player=2;
+            
+            }
+            else {
+                objTic.style="color:green;font-size: 30px";
+                objPlayer.style="color:brown;font-size: 30px";
+                objTic.innerHTML="HE";
+                player=1;
+
+        }
+        objPlayer.innerHTML="player "+player;
+    }
+    </script>
+</head>
+<body>
+
+    <h3 id="player">Player 1</h3>
+    <br>
+    <table border="2px">
+        <tr>
+            <td><span id="11" onclick="ticHere('11')" style="color: fuchsia; font-size: 30px;">NO</span></td>
+            <td><span id="12" onclick="ticHere('12')" style="color: fuchsia; font-size: 30px;">NO</span></td>
+            <td><span id="13" onclick="ticHere('13')" style="color: fuchsia; font-size: 30px;">NO</span></td>
+        </tr>
+        <tr>
+            <td><span id="21" onclick="ticHere('21')" style="color: fuchsia; font-size: 30px;">NO</span></td>
+            <td><span id="22" onclick="ticHere('22')" style="color: fuchsia; font-size: 30px;">NO</span></td>
+            <td><span id="23" onclick="ticHere('23')" style="color: fuchsia; font-size: 30px;">NO</span></td>
+        </tr>
+        <tr>
+            <td><span id="31" onclick="ticHere('31')" style="color: fuchsia; font-size: 30px;">NO</span></td>
+            <td><span id="32" onclick="ticHere('32')" style="color: fuchsia; font-size: 30px;">NO</span></td>
+            <td><span id="33" onclick="ticHere('33')" style="color: fuchsia; font-size: 30px;">NO</span></td>
+        </tr>
+    </table>
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>

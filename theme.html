@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>theme</title>
+    <script>
+      function setTheme() {
+        var objSpan = document.getElementById("s1");
+        var objSpan2 = document.getElementById("s2");
+        objSpan.style = "color: blue";
+        objSpan2.style = "color: pink";
+
+      }
+      function setTheme2() {
+        var objSpan = document.getElementById("s1");
+        var objSpan2 = document.getElementById("s2");
+        objSpan.style = "color: silver";
+        objSpan2.style = "color: green";
+      }
+      function setTheme3() {
+        var objSpan = document.getElementById("s1");
+        var objSpan2 = document.getElementById("s2");
+        objSpan.style = "color: black";
+        objSpan2.style = "color: red";
+      }
+    </script>
+    <body>
+        <hr>
+      <h1>Theme Challange</h1>
+      <hr>
+
+      <h2>
+       <mark> <span id="s1" style="color: deeppink">Pickup</span
+        ><span id="s2" style="color: dimgray">Biz</span></mark>
+      </h2>
+      <button onclick="setTheme()">Theme 1</button>
+      <button onclick="setTheme2()">Theme 2</button>
+      <button onclick="setTheme3()">Theme 3</button>
+    </body>
+  </head>
+</html>

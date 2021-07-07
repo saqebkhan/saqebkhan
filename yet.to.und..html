@@ -5,22 +5,16 @@
    
     <title>Form</title>
     <script>
-        function setFullName() {
-            var fName= document.getElementById("firstname");
+        function setfName() {
+            var fName=document.getElementById ("name");
             var mName= document.getElementById("middlename");
             var lName= document.getElementById("lastname");
-            var FullName= document.getElementById("fullname");
+            var fullName= document.getElementById("fullname");
 
-            FullName.value= fName.value +" "+ mName.value +" "+lName.value
+            fullName.value= fName.value+" "+mName.value+" "+lName.value 
+            console.log(fullName)}
             
         
-            }
-            function clearme() {
-                var clrfullname=document.getElementById("fullname");
-                clrfullname.value=" ";
-
-                
-            }
         </script>
 </head>
 <body>
@@ -31,7 +25,7 @@
         <h3>Personal Info</h3>
 
         <label>First Name:
-        <input type="text" id="firstname">
+        <input type="text" id="name">
         </label>
          <br> <br>
 
@@ -45,7 +39,7 @@
         </label> <br> <br>
         <label>Full Name:<input type="text" id="fullname">
         </label> <br> <br>
-        <button onclick="setFullName()">Full Name</button>
+        <button onclick="setfName()">Full Name</button>
 
         <button onclick="clearme()">clear</button>
     <br>
