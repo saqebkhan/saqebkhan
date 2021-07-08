@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script>
+        function setStoreValues(){
+            sessionStorage.setItem("userName",document.getelementById("name").value);
+            sessionStorage.setItem("userPassword",document.getElementById("password").value);
+            sessionStorage.setItem("favColor",document.getElementById(colorPicker).value);
+        }
+        function setStoreValue(){
+            document.getElementById("name").value= sessionStorage.getItem("userName");
+            document.getElementById("password").value=sessionStorage.getItem("userPassword");
+            document.getElementById("cnfpassword").value=sessionStorage.getItem("userPassword");
+            document.getElementById("colorPicker").value=sessionStorage.getItem("favColor");
+            document.getElementById("body").style=`background-color: ${sessionStorage.hetItem("favColor")}`;
+            
+        }
+
+
+
+
+
+           
+
+        }
+    </script>
+</head>
+<style>
+    form {
+        background-color: rgb(202, 197, 197);
+        width: 250px;
+        padding: 20px;
+    }
+    legend{
+        background-color: lawngreen;
+        padding: 2px;
+    }
+    fieldset{
+        width: 20px;
+    }
+    nav{
+    background-color: crimson;
+    padding: 20px;
+}
+
+
+</style>
+
+
+
+<body>
+    <nav>
+        <a href="./form.html">Registration</a>
+        <a href="">Home</a>
+        <a href="./product.html">Product</a>
+        <a href="./aboutus.html">About Us</a>
+        <a href="./contactus.html">Contact Us</a>
+        <input type="text">
+    </nav>
+    
+        <fieldset>
+            <legend>Regestration Form</legend>
+        
+    <form>
+    <h2 style="color: blue;"><i>Form</h2></i></h3>
+
+
+    <label><b>Name:</b></label><br>
+
+
+    <input id="name" type="text" placeholder="Enter Name"><br>
+
+    <label><b>Password:</b></label><br>
+
+    <input  id="password" type="password" placeholder="Enter Password"><br>
+
+    <label><b>Confirm Password:</b></label><br>
+
+    <input type="password" placeholder="Confirm Password"><br>
+
+    <br>
+    <label><b>Gender:</b></label><br>
+    <input type="radio" name="gender">Male<input type="radio" name="gender">Female
+<br>
+<br>
+<br>
+    <label><b>Hobbies:</b></label>
+    <br>
+    <input type="checkbox" name="reading">Reading
+
+    <input type="checkbox" name="writing">Writing 
+
+    <input type="checkbox" name="coding">Coding
+
+
+    <br>
+    <br>
+    <br>
+    <label>DOB</label>
+    <input type="date">
+    <br>
+    <br>
+    <br>
+    <button onclick="setStoreValue">Submit</button>  <button>Cancel</button>
+</fieldset>
+
+
+</form>
+
+</body>
+<script> getStoreValue();
+</script>
+</html>
