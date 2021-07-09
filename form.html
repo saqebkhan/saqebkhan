@@ -11,12 +11,12 @@
             sessionStorage.setItem("userPassword",document.getElementById("password").value);
             sessionStorage.setItem("favColor",document.getElementById(colorPicker).value);
         }
-        function setStoreValue(){
+        function getStoreValue(){
             document.getElementById("name").value= sessionStorage.getItem("userName");
             document.getElementById("password").value=sessionStorage.getItem("userPassword");
             document.getElementById("cnfpassword").value=sessionStorage.getItem("userPassword");
             document.getElementById("colorPicker").value=sessionStorage.getItem("favColor");
-            document.getElementById("body").style=`background-color: ${sessionStorage.hetItem("favColor")}`;
+            document.getElementById("body").style=`background-color: ${sessionStorage.getItem("favColor")}`;
             
         }
 
@@ -52,7 +52,7 @@
 
 
 
-<body>
+<body id="body">
     <nav>
         <a href="./form.html">Registration</a>
         <a href="">Home</a>
