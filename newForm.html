@@ -23,41 +23,89 @@
         }
     </script>
     <style>
-        a{
-            padding: 15px ;
-            width: 5px;
-            color:honeydew
-            
+        
+
+        
+        .navbar {
+            position: fixed;
+            font-size: large;
+            background-color: rgb(136, 136, 138);
+            font: caption;
+            height: 40px;
+            width: 97%;
+            padding: 25px;
+            border-radius: 35px;
+            margin-top: 0.25%;
+
+
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: rgb(247, 240, 240);
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            background: rgb(241, 238, 238);
+            color: rgb(105, 100, 100);
+            border-radius: 30px;
             
         }
-        nav{
-            background-color: crimson;
+
+        a {
+            text-decoration: none;
             padding: 20px;
+            float: right;
+            color: rgb(126, 113, 113);
         }
+
+        img {
+
+            width: 180px;
+            height: 40px;
+        }
+        
         figcaption{
             text-align: center;
             background-color: indigo;
         
         }
         
-        input{
-            float: right;
-        }
+        
         figure{
             display: inline-block;
         
         }
+        input {
+            float: right;
+            text-align: center;
+            width: 24%;
+            padding: 0.7%;
+            height: 25%;
+            margin-top: 1%;
+
+        }
         </style>
 
 <body id="body">
-    <nav>
-        <a href="./newForm.html">Registration</a>
-        <a href="./homepage.html">Home</a>
-        <a href="./product.html">Product</a>
-        <a href="./aboutus.html">About Us</a>
-        <a href="./contactus.html">Contact Us</a>
-        <input type="text">
-    </nav>
+   
+    <div class="navbar">
+        <img id="one" src="./pngfind.com-trident-logo-png-5501196.png" alt="">
+        <a href=""><b><i>LOG IN</i></b></a>
+        <a href=""><b><i>CONTACT</i></b></a>
+        <a href=""><b><i>COMPANY</i></b></a>
+        <a href=""><b><i>CAREER</i></b></a>
+        <a href=""><b><i>INVESTOR RELATION</i></b></a>
+        <a href=""><b><i>PRODCTS</i></b></a>
+        <input type="text" placeholder="Search">
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
     
     <h1>Registration Here</h1>
@@ -69,7 +117,7 @@
         <label>Name</label>
         <!-- <br> -->
         <input id="name" type="text">
-        <br> <br>
+        <br> 
         <label>Password</label>
         <input id="password" type="password">
         <br>
