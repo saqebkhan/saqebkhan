@@ -1,0 +1,61 @@
+nav{
+    background-color: rgb(245, 132, 57);
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+a:hover{
+    box-shadow: 0 0 10px ;
+    border-radius: 10px;
+}
+
+  /* -------------------services list----------------------- */
+
+/* 
+.dropdown1 a{
+    display: block;
+}
+.dropdown1{
+    display: block;
+    display: inline-block;
+} */
+
+/* .dropdownlist{
+    position: absolute;
+    padding: 5px;
+    width: 180px;
+    display: none;
+
+}
+.dropdown1:hover .dropdownlist{
+    display: block;
+    text-align: center;
+    background-color: cadetblue;
+    border-radius: 20px;
+
+
+} */
+.dropdown1 a{
+    display: block;
+
+}
+.dropdown1{
+    display: inline-block;
+}
+.droplist{
+    position: absolute;
+    padding: 5px;
+    width: 180px;
+    display: none;
+
+}
+.dropdown1:hover .droplist{
+    display: block;
+    text-align: center;
+    background-color: blueviolet;
+    border-radius: 20px;
+}
