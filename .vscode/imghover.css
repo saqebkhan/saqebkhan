@@ -1,0 +1,20 @@
+div{
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 0 15px rgb(44, 43, 43);
+
+}
+img{
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+
+}
+img:hover{
+    transform:scale(1.5);
+    box-shadow: 0 0 15px rgb(22, 21, 21);
+
+
+    
+}

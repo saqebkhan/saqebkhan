@@ -1,0 +1,36 @@
+body{
+    background-image: url(./sunset-1373171__340.jpg);
+    background-size: cover;
+}
+.logform{
+    background-color: rgba(117, 124, 124, 0);
+    width: 300px;
+    height: 400px;
+    padding: 15px;
+    margin: 150px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+
+}
+img{
+    height: 150px;
+    width: 150px;
+    margin: -90px;
+    padding-bottom: 100px;
+   
+}
+input{
+    text-align: center;
+    margin: 10px;
+}
+::placeholder{
+    color: red;
+}
+button{
+    width: 100px;
+    border-radius: 30px;
+    padding: 3px;
+}
+div{
+    text-align: center;
+}
