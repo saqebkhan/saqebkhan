@@ -1,0 +1,22 @@
+h2{
+    background-color: rgb(255, 90, 30);
+    border: 1px solid black;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 12px 15px 20px black;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+
+    
+}
+div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-radius: 20px;
+
+}
