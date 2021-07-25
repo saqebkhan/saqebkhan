@@ -1,0 +1,47 @@
+nav{
+    background-color: rgb(225, 193, 255);
+    /* width: 100%; */
+    /* height: 30px; */
+    text-align: center;
+    padding: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+a{
+    color: rgb(255, 0, 0);
+    padding: 20px;
+    /* margin: 18px; */
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Zen Loop', cursive;
+}
+a:hover{
+    box-shadow: 0 0 10px;
+    border-radius: 12px;
+}
+.h11{
+    text-align: center;
+    font-size:40px;
+    font-family: 'Abril Fatface', cursive;
+    color: rgb(87, 84, 84);
+    border-color: black;
+
+}
+
+input{
+    text-align: center;
+    width: 250px;
+    display: inline-block;
+    margin: 0 auto;
+    /* margin-left: 473px; */
+    text-
+}
+body{
+    background-image: url(./drops-6392473.jpg);
+    background-repeat: no-repeat;
+    /* border-image-width: 100%; */
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-size: auto;
+}
