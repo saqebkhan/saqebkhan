@@ -21,19 +21,7 @@ img{
 
 /* Mobile View */
 
-@media (max-width:500px){
-    body{
-        background-color: rgb(109, 253, 181);
-    }
-    h2{
-        display: block;
-    }
-    p{
-        color: tomato;
-    }
-}
-/* Tab View */
-@media (min-width:501px) and (max-width:800px){
+@media  (max-width:800px){
     body{
       background-color: rgb(182, 182, 245);
     }
@@ -46,9 +34,23 @@ img{
         color: white;
     }
 }
+
+@media (max-width:500px){
+    body{
+        background-color: rgb(109, 253, 181);
+    }
+    h2{
+        display: block;
+    }
+    p{
+        color: tomato;
+    }
+}
+/* Tab View */
+
 /* Laptop View */
 
-@media (min-width:801px) and (max-width:1200px){
+/* @media (min-width:801px) and (max-width:1200px){
     body{
         background-color:  rgb(154, 255, 154);
         text-align: center;
@@ -61,4 +63,4 @@ img{
         color: black;
     }
 
-}
+} */ */
