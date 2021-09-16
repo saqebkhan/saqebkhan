@@ -4,26 +4,41 @@
     <meta charset="UTF-8">
 
     <title>form</title>
+    <style>
+        @keyframes example {
+  0% {color: navy;}
+  10% {color: blue;}
+  20% {color: blueviolet;}
+  30% {color: green;}
+  40% {color: red;}
+  50% {color: yellowgreen;}
+  60% {color: purple;}
+  70% {color: gray;}
+  80% {color: rebeccapurple;}
+  90% {color: orange;}
+  100% {color: black;}
+}
+        h1{
+            animation-name: example;
+            animation: example 15s infinite;
+            /* color: navy; */
+
+        }
+    </style>
     <script>
         function setFullName() {
-            var fName= document.getElimentById("firstname");
-            var mName= document.getElimentById("middlename");
-            var lName= document.getElimentById("lastname");
-            var FullName= document.getElimentById("fullname");
-
-            FullName.value= fName.value +" "+ mName.value +" "+lName.value
-
-
-            } 
-         
-        </script>
+            var fName= document.getElementById("firstName").value;
+            var mName= document.getElementById("middlename").value;
+            var lName= document.getElementById("lastname").value;
+            var FullName= document.getElementById("fullname").innerHTML= `Hello, Welcome Mr. ${fName} ${mName} ${lName}.`
             
-
-
+            }
+        </script>
     </head>
     <body>
-        <h1>Emoloyee Detail</h1>
+        <h2>Emoloyee Detail</h2>
         <hr><br>
+        <h1 id="fullname"></h1>
         <label>First Name:</label>
         <input type="text" id="firstName"> <br><br>
         <label>Middle Name:</label>
@@ -31,7 +46,8 @@
         <label>Last Name:</label> 
         <input type="text" id="lastname"><br><br>
         <label>Full Name:</label>
-        <input type="text">
+        <!-- <input type="text" id="fullname"> -->
+             
 <button onclick="setFullName()">Submit</button>
 <button>clear</button>
 
