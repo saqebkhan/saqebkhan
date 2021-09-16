@@ -1,9 +1,7 @@
-// window.localStorage.setItem("pata","nizam colony")
+// window.localStorage.setItem("pata", "nizam colony");
 
-// console.log(localStorage("pata"))
+// console.log(localStorage("pata"));
 
+window.sessionStorage.setItem("colony", "naka");
 
-
-// window.sessionStorage.setItem("colony","naka")
-
-// console.log(sessionStorage("colony"))
+console.log(sessionStorage("colony"));
